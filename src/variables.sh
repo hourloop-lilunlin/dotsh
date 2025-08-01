@@ -14,7 +14,7 @@ export PATH="$PATH:$HOME/.local/bin:/ide/bin/remote-cli:$HOME/.nix-profile/bin";
 declare dotfiles_repos=(
     # Defaults to an example template repo, you may remove below line and put your own or not use any at all!
     # If you do not have your own repo yet, you can fork this one as the starting point ;)
-    https://github.com/axonasif/miki_ash_dotfiles.public
+    https://github.com/hourloop-lilunlin/dotfiles
 )
 # Overwrite if the DOTFILES_REPOS environment variable is set
 if test -n "${DOTFILES_REPOS:-}"; then {
@@ -105,7 +105,7 @@ declare nixpkgs_level_2+=(
     nixpkgs.zoxide
     nixpkgs.rclone
     nixpkgs.bat
-    nixpkgs.exa
+    nixpkgs.eza
 )
 # =================================================
 # = BIG PACKAGES                                  =

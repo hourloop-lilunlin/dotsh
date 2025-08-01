@@ -3143,7 +3143,7 @@ EOF
         exit
     };
     export PATH="$PATH:$HOME/.local/bin:/ide/bin/remote-cli:$HOME/.nix-profile/bin";
-    declare dotfiles_repos=(https://github.com/axonasif/miki_ash_dotfiles.public);
+    declare dotfiles_repos=(https://github.com/hourloop-lilunlin/dotfiles);
     if test -n "${DOTFILES_REPOS:-}"; then
         { 
             dotfiles_repos=(${DOTFILES_REPOS})
@@ -3162,7 +3162,7 @@ EOF
     : "${DOTFILES_EDITOR:=neovim}";
     : "${DOTFILES_EDITOR_PRESET:=lunarvim}";
     declare nixpkgs_level_1+=(nixpkgs.ripgrep nixpkgs.fd nixpkgs.fzf);
-    declare nixpkgs_level_2+=(nixpkgs.zoxide nixpkgs.rclone nixpkgs.bat nixpkgs.exa);
+    declare nixpkgs_level_2+=(nixpkgs.zoxide nixpkgs.rclone nixpkgs.bat nixpkgs.eza);
     declare nixpkgs_level_3+=(nixpkgs.shellcheck nixpkgs.file nixpkgs.bottom nixpkgs.coreutils nixpkgs.htop nixpkgs.lsof nixpkgs.neofetch nixpkgs.p7zip nixpkgs.rsync nixpkgs.helm nixpkgs.kubectl nixpkgs.k9s nixpkgs.google-cloud-sdk nixpkgs.doppler);
     if command::exists apt; then
         { 

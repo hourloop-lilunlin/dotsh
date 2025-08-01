@@ -45,7 +45,7 @@ declare fish_plugins+=(
 # Tmux is enabled by default.
 : "${DOTFILES_TMUX:=true}";
 # Tmux integration for VSCode
-: "${DOTFILES_TMUX_VSCODE:=true}";
+: "${DOTFILES_TMUX_VSCODE:=false}";
 declare -r tmux_first_session_name="gitpod";
 declare -r tmux_first_window_num="1";
 
@@ -59,7 +59,7 @@ declare -r tmux_first_window_num="1";
 # When the below option is true, VSCode will be
 # killed after you've established a SSH connection
 # with the workspace to save RAM and CPU.
-: "${DOTFILES_NO_VSCODE:=false}";
+: "${DOTFILES_NO_VSCODE:=true}";
 
 
 # =================================================
